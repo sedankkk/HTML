@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+:root{
+    --main-color: #a98274;
+    --black-color: #141313;
+    --border: 0.1rem solid rgb(126,74,61);
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+ 
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;    /*sınırladığımız alandan dışarı çıkmaz */
+    scroll-padding-top: 9rem ;
+    scroll-behavior: smooth;   /* kaydırma efekti */
+        }
+
+
+        
+
+
+body{
+    background-color:#90a4ae;
+    height: 400vh;
+}
+
+section{
+    padding: 35px 7%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1.5rem 3.5rem;
+    font-size: 13px;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    color: #fff;
+    background-color: #4c6c7c;
+    border-radius:25px;
+    cursor: pointer;
+}
+
+.header .logo img{
+    width:  10rem;
+}
+
+
+.header{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 40px;
+    box-shadow: 0px 0px 17px -2px rgb(40, 53, 94);
+    -webkit-box-shadow: -10px 10px 5px 0px rgb(40, 53, 94);
+    -moz-box-shadow: -10px 10px 5px 0px rgb(40, 53, 94);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar a{
+    color: #4c6c7c;
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+    margin: 0 15px ;
+    border-bottom: 0 1rem solid transparent; 
+
+}
+.header .navbar .active,
+.header .navbar a:hover{
+   
+    background-color: #bdbdbd;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+
+.header .buttons button {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px ;
+    background-color: transparent;
+
+}
+.home{
+    min-height: 100vh;
+    background: url(../images/mak2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+   
+    
+
+}
+
+.home .content {
+    max-width: 100%;
+     
+
+}
+
+.home .content h1{
+    font-size: 50px;
+    text-align: right;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration:line;
+    color: rgb(175, 108, 108);     
+    height: min-content;
+    margin-right: 50px;
+    
+
+}
+
+.home .content p{
+    font-size: large;
+    font-weight: bold;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-decoration:overline;
+    color: #4c6c7c;
+    margin-right: 50px;
+    line-height: 3;
+    
+    
+}
+.menu{
+
+    height: 80vh;
+}
+.menu h1{
+    color: #a0594c;
+    margin: 15px;
+    font-size:30px;
+
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+}
+
+.menu .box-container .box img{
+    width: 100px;
+    object-fit: cover;
+    gap: 100px;
+    border-radius: 30px;
+    align-items: center;
+
+}
+.menu .box-container .box {
+    padding: 4rem ;
+    background-color:#a0594c;
+    border-radius: 30px;
+    background-color: #a0594c;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 15px;
+    
+}
+
+.menu .box-container .box .menu-category{
+    font-size: 15px;
+    color: #363535;
+    text-align:right;
+
+
+}
+.menu .box-container .box h3{
+    color: #1a252b;
+    font-size: 20px;
+
+}
+.menu .box-container .box .price{
+    color: #1a252b;
+    font-size: 20px;
+
+}
+
+
+.tarih h1{
+    color: #a0594c;
+    margin: 15px;
+    font-size:40px;
+    text-align: center;
+}
+
+.tarih{
+    background-color:#313844;
+    height: 90vh;
+
+}
+
+.tarih  img {
+    border-radius: 30px;
+    height:auto;
+    width: 300px;
+    align-items: center;
+}
+
+.yan {
+    float: right;
+    padding: 0 10px 10px 0;
+}
+
+.tarih .rsm h1 {
+    font-size: 19px;
+    color: rgb(192, 193, 197);
+    text-align: left;
+
+}
+
+.tarih  .rsm p{
+    color:#90a4ae;
+    font-size: 22px;
+
+}
+
+
+
+
+
+
+.tarih2{
+    background-color:#1f2325;
+    height: 90vh;
+
+}
+.tarih2 img{
+    border-radius: 30px;
+    height:auto;
+    width: 300px;
+    align-items: center;
+}
+.yan2{
+    float: left;
+    padding: 0 10px 10px 0;
+
+}
+.tarih2 .rsm2 h1{
+    font-size: 19px;
+    color: rgb(192, 193, 197);
+    text-align: left;
+
+}
+
+
+.tarih2  .rsm2 p{
+    color:#a7a7a7;
+    font-size: 22px;
+}
+
+
+
+
+.tarih3{
+    background-color: #2e4450;
+    height: 90vh;
+
+}
+
+.tarih3 img {
+    border-radius: 30px;
+    height: 300px;
+    width: 400px;
+    
+}
+.yan3{
+    float: right;
+    padding:0 10px 10px 0;
+}
+
+.tarih3 .rsm3 h1{
+    font-size: 19px;
+    color: rgb(192, 193, 197);
+    text-align: left;
+
+}
+
+.tarih3 .rsm3 p{
+    color:#a7a7a7;
+    font-size: 22px;
+
+
+}

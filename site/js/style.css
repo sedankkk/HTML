@@ -1,0 +1,319 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+   }
+
+
+   
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;    /*sınırladığımız alandan dışarı çıkmaz */
+    scroll-padding-top: 9rem ;
+    scroll-behavior: smooth;   /* kaydırma efekti */
+}
+
+
+body{
+    
+    background-size: 100%;
+    background-color: #ca9f6e;
+    height: 300vh;
+    
+}
+
+section{
+    padding: 35px 7%;
+    
+
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1.5rem 3.5rem;
+    font-size: 13px;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    color: #fff;
+    background-color: #ca9f6e;
+    border-radius:25px;
+    cursor: pointer;
+    margin-right: 15px;
+
+}
+
+
+
+header {
+   
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 40px;
+    box-shadow: 0px 0px 17px -2px rgb(40, 53, 94);
+    -webkit-box-shadow: -10px 10px 5px 0px rgb(173, 150, 106);
+    -moz-box-shadow: -10px 10px 5px 0px rgb(173, 150, 106);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo marquee{
+    font-size: 80px;
+    font-family:sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: #4b2c20;
+    border-radius: 35px;
+    width: 250px;
+}
+
+ header .navbar ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+header.navbar li{
+    position: relative;
+}
+
+header  .navbar ul li ul{
+    display:none;
+}
+
+
+header .navbar a{
+    
+    color: #8a5f28;
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+    background: linear-gradient(90deg,#0000,#fff,#0000);
+    margin: 0 15px ;
+    border-bottom: 0 1rem solid transparent; 
+    align-items: center;
+    margin-right: 40px;
+    float: right;
+
+}
+
+header .navbar a:hover{
+   
+    background-color: #dfb793;
+    padding-bottom: 2px;
+    border-radius: 5px;
+   
+}
+
+
+
+.home {
+    color: #c7945a;
+    background: url(kahvee.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    
+    
+   
+   
+}
+.home .content {
+    max-width: 100%;
+  
+}
+
+
+
+
+.home .content h1{
+    font-size: 50px;
+    text-align: right;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration:line;
+    color: #4b2c20;   
+    height: min-content;
+    margin-right: 50px;
+    background-color: #dfb793;
+    border-radius: 23px;
+}
+
+.home .content p{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-decoration:overline;
+    color:#a98274;
+    margin-right: 50px;
+    line-height: 65px;
+    
+    
+}
+.home .content a{
+    font-size: 10px;
+
+
+
+}
+
+.home .content .btn {
+        margin-top: 1rem;
+        display: inline-block;
+        padding: 1.5rem 3.5rem;
+        font-size: 13px;
+        text-align: center;
+        height: 50px;
+        width: 150px;
+        color: #fff;
+        background-color: #ca9f6e;
+        border-radius:25px;
+        cursor: pointer;
+        margin-right: 15px;
+}
+
+
+
+.tarih h1{
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #4b2c20;
+    letter-spacing:  6px;
+    overflow: hidden;
+    background: linear-gradient(90deg,#0000,rgb(236, 201, 155),#0000);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: animate 3s linear infinite;
+    text-align: center;
+    -webkit-text-fill-color: rgb(158, 104, 60);
+    
+   
+}
+
+.tarih .resim img{
+    border-radius: 25px;
+    width: 300px;
+    height: 280px;
+    
+}
+.yan{
+    float: left;
+}
+
+.tarih .resim p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: #3b2a1b;
+    text-align:center;
+   
+}
+
+.menu{
+    background-color: rgb(110, 89, 64);
+    height: 70vh   ;
+
+
+}
+
+.menu h1{
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #4b2c20;
+    letter-spacing:  6px;
+    overflow: hidden;
+    background: linear-gradient(90deg,#0000,rgb(236, 201, 155),#0000);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: animate 3s linear infinite;
+    text-align: center;
+    -webkit-text-fill-color: rgb(158, 104, 60);
+    margin: 20px;
+
+
+}
+
+.menu .box-container {
+
+  
+    
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    margin-right: 15px;
+    display:inline-flex;
+
+}
+
+.box-container .box {
+    padding: 4rem ;
+    border-radius: 30px;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 15px;
+}
+
+
+.box .menu-category{
+    font-size: 15px;
+    color: #363535;
+    text-align:right;
+
+
+}
+.menu  .box h3{
+    color: #1a252b;
+    font-size: 20px;
+
+}
+.menu  .box .price{
+    color: #1a252b;
+    font-size: 20px;
+
+}
+
+.menu .box img {
+    border-radius: 25px;
+    width: 180px;
+    height: 150px;
+
+
+}
+
+
+button{
+    display: inline;
+    background-color: #836348;
+    border-radius: 30px;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+}
+
+.input{
+
+}
